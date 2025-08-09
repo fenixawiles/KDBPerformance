@@ -57,6 +57,26 @@ body {
     font-size: 1.5rem;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo-link:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.logo-link:hover h2 {
+    background: linear-gradient(135deg, #56ab2f 0%, #667eea 50%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .nav-menu {
     display: flex;
     gap: 2rem;
