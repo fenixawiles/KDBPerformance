@@ -51,17 +51,32 @@ function initializeNavigation() {
         });
     });
 
-    // Navbar background on scroll
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 25px rgba(0, 0, 0, 0.15)';
-        } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        }
-    });
+    // Optimized navbar background on scroll
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        let navbarTicking = false;
+        
+        const updateNavbar = () => {
+            const scrolled = window.pageYOffset;
+            if (scrolled > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 25px rgba(0, 0, 0, 0.15)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+            navbarTicking = false;
+        };
+        
+        const requestNavbarUpdate = () => {
+            if (!navbarTicking) {
+                requestAnimationFrame(updateNavbar);
+                navbarTicking = true;
+            }
+        };
+        
+        window.addEventListener('scroll', requestNavbarUpdate, { passive: true });
+    }
 }
 
 // Product filtering functionality
@@ -294,14 +309,25 @@ function initializeAnimations() {
         observer.observe(el);
     });
     
-    // Parallax effect for hero section
+    // Optimized parallax effect for hero section
     const hero = document.querySelector('.hero');
     if (hero) {
-        window.addEventListener('scroll', () => {
+        let ticking = false;
+        const updateParallax = () => {
             const scrolled = window.pageYOffset;
             const rate = scrolled * -0.5;
-            hero.style.transform = `translateY(${rate}px)`;
-        });
+            hero.style.transform = `translate3d(0, ${rate}px, 0)`;
+            ticking = false;
+        };
+        
+        const requestParallaxUpdate = () => {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        };
+        
+        window.addEventListener('scroll', requestParallaxUpdate, { passive: true });
     }
     
     // Enhanced floating card animations

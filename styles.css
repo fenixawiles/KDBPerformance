@@ -11,6 +11,13 @@ body {
     color: #2c3e50;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    /* Performance optimizations for smooth scrolling */
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -174,6 +181,11 @@ body {
     animation: float 6s ease-in-out infinite;
     transition: transform 0.3s ease;
     min-width: 150px;
+    /* Performance optimizations */
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
 }
 
 .floating-card:hover {
