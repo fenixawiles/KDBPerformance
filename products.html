@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - KDB Performance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>KDB Performance</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Premium Products</h1>
+            <p class="page-subtitle">Tested and trusted by collegiate athletes</p>
+        </div>
+    </header>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="equipment">Training Equipment</button>
+                <button class="filter-btn" data-filter="supplements">Supplements</button>
+                <button class="filter-btn" data-filter="gear">Athletic Gear</button>
+                <button class="filter-btn" data-filter="recovery">Recovery</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Training Equipment -->
+                <div class="product-card" data-category="equipment">
+                    <div class="product-image">
+                        <div class="product-badge">TESTED</div>
+                        <div class="placeholder-image">🏋️‍♂️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Resistance Bands Set</h3>
+                        <p class="product-description">Professional-grade resistance bands for strength training and rehabilitation. Perfect for building muscle and improving flexibility.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="equipment">
+                    <div class="product-image">
+                        <div class="product-badge">TOP PICK</div>
+                        <div class="placeholder-image">🎯</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Agility Ladder</h3>
+                        <p class="product-description">Heavy-duty agility ladder for speed and coordination training. Essential for basketball players and all athletes.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="equipment">
+                    <div class="product-image">
+                        <div class="product-badge">PREMIUM</div>
+                        <div class="placeholder-image">⚖️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Adjustable Dumbbells</h3>
+                        <p class="product-description">Space-saving adjustable dumbbells for home workouts. Quick weight changes for efficient strength training sessions.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Supplements -->
+                <div class="product-card" data-category="supplements">
+                    <div class="product-image">
+                        <div class="product-badge">ENERGY</div>
+                        <div class="placeholder-image">⚡</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pre-Workout Formula</h3>
+                        <p class="product-description">Clean energy pre-workout without crash. Enhances focus, strength, and endurance for peak performance.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="supplements">
+                    <div class="product-image">
+                        <div class="product-badge">RECOVERY</div>
+                        <div class="placeholder-image">🔋</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Whey Protein Powder</h3>
+                        <p class="product-description">High-quality whey protein for muscle recovery and growth. Great taste and easy mixing for post-workout nutrition.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="supplements">
+                    <div class="product-image">
+                        <div class="product-badge">NATURAL</div>
+                        <div class="placeholder-image">🌿</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Creatine Monohydrate</h3>
+                        <p class="product-description">Pure creatine monohydrate for increased power and strength. Scientifically proven to enhance athletic performance.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Athletic Gear -->
+                <div class="product-card" data-category="gear">
+                    <div class="product-image">
+                        <div class="product-badge">COMFORT</div>
+                        <div class="placeholder-image">👟</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Basketball Shoes</h3>
+                        <p class="product-description">High-performance basketball shoes with superior grip and ankle support. Perfect for court domination.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gear">
+                    <div class="product-image">
+                        <div class="product-badge">MOISTURE-WICKING</div>
+                        <div class="placeholder-image">👕</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Performance T-Shirts</h3>
+                        <p class="product-description">Lightweight, moisture-wicking athletic shirts for training and competition. Comfortable fit for all activities.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.5/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gear">
+                    <div class="product-image">
+                        <div class="product-badge">COMPRESSION</div>
+                        <div class="placeholder-image">🩱</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Compression Shorts</h3>
+                        <p class="product-description">High-quality compression shorts for improved blood flow and muscle support during intense workouts.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Recovery -->
+                <div class="product-card" data-category="recovery">
+                    <div class="product-image">
+                        <div class="product-badge">THERAPEUTIC</div>
+                        <div class="placeholder-image">🌡️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Foam Roller</h3>
+                        <p class="product-description">High-density foam roller for muscle recovery and injury prevention. Essential for post-workout recovery routine.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="recovery">
+                    <div class="product-image">
+                        <div class="product-badge">MASSAGE</div>
+                        <div class="placeholder-image">💆</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Massage Gun</h3>
+                        <p class="product-description">Percussive therapy massage gun for deep muscle recovery. Multiple speeds and attachments for targeted relief.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="recovery">
+                    <div class="product-image">
+                        <div class="product-badge">COOLING</div>
+                        <div class="placeholder-image">❄️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ice Bath Tub</h3>
+                        <p class="product-description">Portable ice bath for cold therapy recovery. Reduces inflammation and speeds up muscle recovery after training.</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
+                        <a href="https://amazon.com" target="_blank" class="product-link">View on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="training-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want Personal Training?</h2>
+                <p>Take your game to the next level with one-on-one basketball training sessions.</p>
+                <a href="about.html" class="cta-button">Learn About Training</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KDB Performance</h3>
+                    <p>Premium athletic performance products for serious athletes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="about.html">Personal Training</a></li>
+                        <li><a href="products.html">Premium Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KDB Performance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
